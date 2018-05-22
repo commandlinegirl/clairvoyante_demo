@@ -1,0 +1,31 @@
+{
+  "name": "_clairvoyante_jupyter_demo",
+  "title": "Clairvoyante Jupyter notebook demo",
+  "summary": "Clairvoyant Jypyter notebook demo",
+  "dxapi": "1.0.0",
+  "version": "0.0.1",
+  "inputSpec": [],
+  "outputSpec": [],
+  "runSpec": {
+    "interpreter": "bash",
+    "file": "src/setup.sh",
+    "systemRequirements": {
+      "*": {
+        "instanceType": "mem1_ssd1_x4"
+      }
+    },
+    "distribution": "Ubuntu",
+    "release": "16.04"
+  },
+  "access": {
+    "project": "CONTRIBUTE",
+    "network": [
+      "*"
+    ]
+  },
+  "regionalOptions": {
+    "aws:us-east-1": { "assetDepends": [{"id": "record-FFZ9v780Z6qkBQJY7PV9yyZ3"}]}
+  },
+  "categories": ["hidden_app"],
+  "openSource": true
+}

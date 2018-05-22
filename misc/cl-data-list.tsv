@@ -1,0 +1,23 @@
+batch ID	url	output_name
+1	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/Illumina-HG001-hg38/HG001.GRCh38_full_plus_hs38d1_analysis_set_minus_alt.50x.rg.bam	HG001.GRCh38_full_plus_hs38d1_analysis_set_minus_alt.50x.rg.bam
+2	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/Illumina-HG001-hg38/HG001.GRCh38_full_plus_hs38d1_analysis_set_minus_alt.50x.rg.bam.bai	HG001.GRCh38_full_plus_hs38d1_analysis_set_minus_alt.50x.rg.bam.bai
+3	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/Illumina-HG002-hg38/HG002.GRCh38.50x.rg.bam	HG002.GRCh38.50x.rg.bam
+4	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/Illumina-HG002-hg38/HG002.GRCh38.50x.rg.bam.bai	HG002.GRCh38.50x.rg.bam.bai
+5	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/Illumina-HG003-hg38/HG003.GRCh38.60x.1.bam	HG003.GRCh38.60x.1.bam
+6	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/Illumina-HG003-hg38/HG003.GRCh38.60x.1.bam.bai	HG003.GRCh38.60x.1.bam.bai
+7	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/Illumina-HG004-hg38/HG004.GRCh38.60x.1.bam	HG004.GRCh38.60x.1.bam
+8	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/Illumina-HG004-hg38/HG004.GRCh38.60x.1.bam.bai	HG004.GRCh38.60x.1.bam.bai
+9	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/Illumina-HG005-hg38/HG005.GRCh38.60x.1.rg.bam	HG005.GRCh38.60x.1.rg.bam
+10	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/Illumina-HG005-hg38/HG005.GRCh38.60x.1.rg.bam.bai	HG005.GRCh38.60x.1.rg.bam.bai
+11	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/ONT-HG001-hg19-rel3/ONT_1D_NA12878_Version_1_through_JULY_18th_110GbRAW_mapped.sort.rg.bam	ONT_1D_NA12878_Version_1_through_JULY_18th_110GbRAW_mapped.sort.rg.bam
+12	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/ONT-HG001-hg19-rel3/ONT_1D_NA12878_Version_1_through_JULY_18th_110GbRAW_mapped.sort.rg.bam.bai	ONT_1D_NA12878_Version_1_through_JULY_18th_110GbRAW_mapped.sort.rg.bam.bai
+13	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/ONT-HG001-hg19-rel5/na12878_ont_rel5_rel3and4_ngmlr-0.2.6_mapped.bam	na12878_ont_rel5_rel3and4_ngmlr-0.2.6_mapped.bam
+14	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/ONT-HG001-hg19-rel5/na12878_ont_rel5_rel3and4_ngmlr-0.2.6_mapped.bam.bai	na12878_ont_rel5_rel3and4_ngmlr-0.2.6_mapped.bam.bai
+15	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/PacBio-HG001-hg19/na12878_pacbio_mts_ngmlr-0.2.3_mapped.rg.bam	na12878_pacbio_mts_ngmlr-0.2.3_mapped.rg.bam
+16	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/PacBio-HG001-hg19/na12878_pacbio_mts_ngmlr-0.2.3_mapped.rg.bam.bai	na12878_pacbio_mts_ngmlr-0.2.3_mapped.rg.bam.bai
+17	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/PacBio-HG002-hg19/all_reads.fa.giab_h002_ngmlr-0.2.3_mapped.rg.bam	all_reads.fa.giab_h002_ngmlr-0.2.3_mapped.rg.bam
+18	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/PacBio-HG002-hg19/all_reads.fa.giab_h002_ngmlr-0.2.3_mapped.rg.bam.bai	all_reads.fa.giab_h002_ngmlr-0.2.3_mapped.rg.bam.bai
+19	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/PacBio-HG003-hg19/all_reads.fa.giab_h003_ngmlr-0.2.3_mapped.bam	all_reads.fa.giab_h003_ngmlr-0.2.3_mapped.bam
+20	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/PacBio-HG003-hg19/all_reads.fa.giab_h003_ngmlr-0.2.3_mapped.bam.bai	all_reads.fa.giab_h003_ngmlr-0.2.3_mapped.bam.bai
+21	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/PacBio-HG004-hg19/all_reads.fa.giab_h004_ngmlr-0.2.3_mapped.bam	all_reads.fa.giab_h004_ngmlr-0.2.3_mapped.bam
+22	http://www.bio8.cs.hku.hk/dataset/Clairvoyante/PacBio-HG004-hg19/all_reads.fa.giab_h004_ngmlr-0.2.3_mapped.bam.bai	all_reads.fa.giab_h004_ngmlr-0.2.3_mapped.bam.bai
