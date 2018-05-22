@@ -44,7 +44,7 @@ dx new project cv_test
 dx cp clairvoyante_dnanexus_demo:/ cv_test:/
 ```
 
-## Useful job script
+## Useful job scripts for going through building training dataset to calling variants
 In the `job_scripts` directory, there are some 
 pre-define job submission scripts that you can try out.
 For example, to train a model with Illumina's NA12878 
