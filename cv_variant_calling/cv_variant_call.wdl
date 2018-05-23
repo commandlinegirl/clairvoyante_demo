@@ -43,3 +43,4 @@ task cv_variant_call {
     File vcf_files = "cv_all_output_${sample_name}.tar.gz"
   }
 }
+
