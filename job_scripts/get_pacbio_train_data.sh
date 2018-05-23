@@ -11,11 +11,11 @@ CTG_LIST=/data_from_the_preprint/references/hs37d5_ctg_list
 
 OUTPUT_DIR=PacBio_HG001_training_results
 # dx mkdir $OUTPUT_DIR 
-dx run applets/build_training_dataset -i stage-0.vcf_file=$VCF_FILE\
-	                              -i stage-0.vcf_index=$VCF_IDX\
-		     	              -i stage-0.bed_file=$BED_FILE\
-			              -i stage-0.bam_file=$BAM_FILE\
-			              -i stage-0.bam_idx=$BAM_IDX\
-			              -i stage-0.ctg_list=$CTG_LIST\
-			              -i stage-0.ref_file=$REF_FILE\
-			              --destination $OUTPUT_DIR 
+dx run applets/cv_build_training_dataset -i stage-0.vcf_file=$VCF_FILE\
+                                         -i stage-0.vcf_index=$VCF_IDX\
+                                         -i stage-0.bed_file=$BED_FILE\
+                                         -i stage-0.bam_file=$BAM_FILE\
+                                         -i stage-0.bam_idx=$BAM_IDX\
+                                         -i stage-0.ctg_list=$CTG_LIST\
+                                         -i stage-0.ref_file=$REF_FILE\
+                                         --destination $OUTPUT_DIR 

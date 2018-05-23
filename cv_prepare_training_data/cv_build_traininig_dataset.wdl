@@ -72,6 +72,7 @@ task trueset_vcf_processing {
 
   output {
     File vcf_trimmed = "baseline.breakmulti.inbed.withOutSV.uniq.normalizeGT.vcf.gz"
+    File vcf_trimmed_idx = "baseline.breakmulti.inbed.withOutSV.uniq.normalizeGT.vcf.gz.tbi"
   }
 }
 
