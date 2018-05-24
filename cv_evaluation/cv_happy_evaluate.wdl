@@ -47,16 +47,19 @@ task run_happy_vcfeval {
   File target_vcf_idx
 
   command <<<
+     apt-get update
+     apt-get install -qqy samtools
      gunzip -dc ${ref_file} > ref.fa 
+     samtools faidx ref.fa
      RESULTS=hap_py_results
      mkdir -p $RESULTS/
      /opt/hap.py/bin/hap.py ${trueset_vcf} \
                             ${target_vcf} \
                             -f ${bed_file} \
                             -r ref.fa \
-                            -o $RESULTS/ \
+                            -o $RESULTS/cv_happy_out \
                             --engine=vcfeval
-    tart czvf happy_benchmarking_results.tgz $RESULTS/
+    tar czvf happy_benchmarking_results.tgz $RESULTS/
 
   >>> 
 
