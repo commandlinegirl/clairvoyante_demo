@@ -1,5 +1,6 @@
 #!/bin/bash
 if [ ! -f jars/dxWDL-0.65.jar ]; then
+   mkdir -p jars	
    pushd jars
    wget https://github.com/dnanexus/dxWDL/releases/download/0.65/dxWDL-0.65.jar
    popd
