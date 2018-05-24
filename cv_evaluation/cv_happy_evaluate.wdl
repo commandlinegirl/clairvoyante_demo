@@ -1,7 +1,7 @@
 import "cv_shared.wdl" as share
 import "process_variant_call_tar_ball.wdl" as pvc 
 
-workflow cv_evaluate {
+workflow cv_happy_evaluate {
 
   File target_vcf_tar_ball
   File bed_file
@@ -19,7 +19,7 @@ workflow cv_evaluate {
     input: target_vcf_tar_ball = target_vcf_tar_ball
   }
 
-  call run_vcfeval {
+  call run_happy_vcfeval {
     input: bed_file = bed_file,
            ref_file = ref_file,
            trueset_vcf = trueset_vcf_processing.vcf_trimmed,
@@ -33,11 +33,11 @@ workflow cv_evaluate {
     File trueset_vcf_idx = trueset_vcf_processing.vcf_trimmed_idx
     File target_vcf = process_variant_call_tar_ball.variant_vcf
     File target_vcf_idx = process_variant_call_tar_ball.variant_vcf_idx
-    File benchmarking_results_tgz = run_vcfeval.benchmarking_results_tgz
+    File benchmarking_results_tgz = run_happy_vcfeval.benchmarking_results_tgz
   }
 }
 
-task run_vcfeval {
+task run_happy_vcfeval {
 
   File bed_file
   File ref_file
@@ -47,24 +47,25 @@ task run_vcfeval {
   File target_vcf_idx
 
   command <<<
-    export PATH=/opt/vcflib/bin/:$PATH
-    export PATH=/opt/rtg-tools/rtg-tools-3.9-eda9a71/:$PATH
- 
-    rtg format -o genome.sdf ${ref_file}
+     gunzip -dc ${ref_file} > ref.fa 
+     RESULTS=hap_py_results
+     mkdir -p $RESULTS/
+     /opt/hap.py/bin/hap.py ${trueset_vcf} \
+                            ${target_vcf} \
+                            -f ${bed_file} \
+                            -r ref.fa \
+                            -o $RESULTS/ \
+                            --engine=vcfeval
+    tart czvf happy_benchmarking_results.tgz $RESULTS/
 
-    rtg vcfeval -t genome.sdf -e ${bed_file} -b ${trueset_vcf} -c ${target_vcf} -o benchmarking_results
-   
-    tar czvf benchmarking_results.tgz benchmarking_results/
   >>> 
 
   runtime {
-    docker: "cschin/cv-worker"
+    docker: "pkrusche/hap.py"
+	  dx_instance_type: "mem1_ssd1_x16"
   }
 
   output {
-    File benchmarking_results_tgz = "benchmarking_results.tgz"
+    File benchmarking_results_tgz = "happy_benchmarking_results.tgz"
   }
-
 }
-
-
